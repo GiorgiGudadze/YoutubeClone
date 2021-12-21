@@ -100,6 +100,29 @@ const Explore = (props) => {
 
     }
 
+    const showSkeleton = () =>{
+        let skeletonArray = [];
+        for(let i=0;i<3;i++){
+            skeletonArray.push(<div class="skeletonExp__wrap" key={i}>
+            <div class="skeletonExp__img">
+                <div></div>
+            </div>
+            <div class="skeletonExp__details">
+                <p class="skeletonExp__title"></p>
+                <div class="skeletonExp__view"></div>
+                <div class="skeletonExp__channel"><p></p></div>
+                <p class="skeletonExp__desc"></p>
+            </div>
+        </div>)
+        }
+
+        return(
+            <div>{skeletonArray}</div>
+        )
+
+    }
+
+
     return ( 
         <div className="exploreCnt">
             <div className="exploreTabs">
@@ -142,7 +165,7 @@ const Explore = (props) => {
             </div>
             <div className="exploreVideo">
                 <p className="exploreVideo__header">{title}</p>
-                {renderVideoList()}
+                {videoCollection.length > 0 ? renderVideoList() : showSkeleton()}
             </div>
         </div>
      );

@@ -106,7 +106,7 @@ const App = () => {
             </div>
         </Route>
 
-        <Route path="/YoutubeClone/like">
+        <Route path="/like">
         <div className="sideWrapper">
             <Sidebar/>
             <div className="allMarginLeft">
