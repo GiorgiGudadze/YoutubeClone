@@ -260,7 +260,7 @@ const Header = (props) => {
             <ArrowBackIcon className="arrowBackIcon" onClick={(e)=>onArrowBackClick(e)}/>
             <div className="header__item header__item_logo">
                 <MenuSharpIcon ref={hamburgerBtn} className="header__menuIcon" onClick={(e)=>onHamburgerClick(e)} />
-                <Link to="/">
+                <Link to="/YoutubeClone">
                 <img src="photos/youtube-logo.png" alt="Youtube Logo" className="header__logo"/>
                 </Link>
             </div>
