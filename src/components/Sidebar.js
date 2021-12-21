@@ -13,7 +13,7 @@ const Sidebar = () => {
         <>
 
         <div className="sidebar">
-            <NavLink exact className="sidebar_Atag" to="/" activeClassName="sidebarBoxActive">
+            <NavLink exact className="sidebar_Atag" to="/YoutubeClone" activeClassName="sidebarBoxActive">
             <div className="sidebar__box">
                 <HomeIcon className="sidebar__icon"/>
                 <span className="sidebar__title">Home</span>
@@ -49,7 +49,7 @@ const Sidebar = () => {
                 </div>
             </NavLink>
 
-            <NavLink to="/like" className="sidebar_Atag" activeClassName="sidebarBoxActive">
+            <NavLink to="/YoutubeClone/like" className="sidebar_Atag" activeClassName="sidebarBoxActive">
                 <div className="sidebar__box">
                     <ThumbUpIcon className="sidebar__icon"/>
                     <span className="sidebar__title">Liked videos</span>
@@ -94,7 +94,7 @@ const Sidebar = () => {
         </div>
 
         <div className="miniSidebar">
-            <NavLink exact className="sidebar_Atag" to="/" activeClassName="miniSidebarBoxActive">
+            <NavLink exact className="sidebar_Atag" to="/YoutubeClone" activeClassName="miniSidebarBoxActive">
                 <div className="miniSidebar__box">
                     <HomeIcon className="miniSidebar__icon"/>
                     <span className="miniSidebar__title">Home</span>
@@ -108,7 +108,7 @@ const Sidebar = () => {
                 </div>
             </NavLink>
 
-            <NavLink exact className="sidebar_Atag" to="/like" activeClassName="miniSidebarBoxActive">
+            <NavLink exact className="sidebar_Atag" to="/YoutubeClone/like" activeClassName="miniSidebarBoxActive">
                 <div className="miniSidebar__box">
                     <ThumbUpIcon className="miniSidebar__icon"/>
                     <span className="miniSidebar__title">Like</span>
