@@ -75,7 +75,7 @@ const App = () => {
         
         <Header getSeacrh={getSeacrh}/>
 
-        <Route path="/YoutubeClone" exact>
+        <Route path="/" exact>
             <div className="sideWrapper">
                 <Sidebar/>
                 <div className="allMarginLeft">
